@@ -1,0 +1,7 @@
+{
+  "name": "ts-express",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Nayan Adhikari <adnayan@hotmail.com>",
+  "license": "MIT"
+}
