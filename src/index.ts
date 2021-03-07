@@ -2,7 +2,6 @@ import 'reflect-metadata';
 import 'dotenv/config';
 import { Server } from 'http';
 import express, { Application } from 'express';
-import bodyParser from 'body-parser';
 import cors from 'cors';
 import helmet from 'helmet';
 
@@ -16,7 +15,7 @@ const server = new Server(app);
 
 app.use(cors());
 app.use(helmet());
-app.use(bodyParser.json());
+app.use(express.json());
 
 app.set('socketService', new SocketService(server));
 app.use('/', router);

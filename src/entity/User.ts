@@ -13,6 +13,16 @@ import {
 import bcrypt from 'bcryptjs';
 import { Role } from './Role';
 
+export interface IUser {
+	firstName: string;
+	lastName: string;
+	isActive: boolean;
+	email: string;
+	password: string;
+	image: string;
+	roleId: number;
+}
+
 @Entity()
 export class User extends BaseEntity {
 	@PrimaryGeneratedColumn()

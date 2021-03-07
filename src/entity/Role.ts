@@ -10,6 +10,11 @@ import {
 } from 'typeorm';
 import { User } from './User';
 
+export interface IRole {
+	title: string;
+	slug: string;
+}
+
 @Entity()
 export class Role extends BaseEntity {
 	@PrimaryGeneratedColumn()
